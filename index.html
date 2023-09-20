@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./Assets/css/aos.css">
     <link rel="stylesheet" href="./Assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
 
     <!-- Navbar section start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -25,19 +27,22 @@
             <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
              
               <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#Home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#service">Service</a>
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#work">Work</a>
-              </li><li class="nav-item">
-                <a class="nav-link" href="#aboutus">About</a>
-              </li><li class="nav-item">
-                <a class="nav-link" href="#service">Reviews</a>
-              </li><li class="nav-item">
-                <a class="nav-link" href="#service">Contact</a>
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Reviews">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
               </li>
               
             </ul>
@@ -48,19 +53,88 @@
 <!-- content wrapper -->
 <div id="content-wrapper">
 <!-- #home  -->
- <section id="Home">
+ <section id="Home"class="full-height px-lg-5">
   <div class="container">
     <div class="row" >
-      <div class="col-lg-8">
-       <h1>I'M A POWER BI/ORACLE DEVELOPER FROM PAKISTAN,KARACHI</h1>
-       <p>I am Maaz Yousuf I design and code beautifully simple things, and I love what I do.
+      <div class="col-lg-10">
+       <h1 class="display-5 fw-bold "data-aos="fade-up">I'M A <span class="text-brand">POWER BI/ORACLE DEVELOPER</span> FROM PAKISTAN,KARACHI</h1>
+       <p class="lead mt-4 mb-4"data-aos="fade-up"data-aos-delay="300">I am <span class="text-brand">Maaz Yousuf</span> I design and code beautifully simple things, and I love what I do.
         </p>
-        <a href="#work" class="btn btn-brand">Explore My Work</a>
+        <div data-aos="fade-up"data-aos-delay="600">
+          <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
         <a href="#" class="link-custom">Call:(+92)317-1069-336</a>
+        </div>
       </div>
      </div>
    </div>
- </section>
+  </section>
+<!-- Services section start  -->
+<section id="services" class="full-height px-lg-5" >
+  <div class="container">
+    <div class="row pb-4">
+      <div class="col-lg-8">
+        <h6 class="text-brand">SERVICES</h6>
+        <h1>Services That I Provide</h1>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4"data-aos="fade-up">
+        <div class="service p-4 bg-base rounded-4 shadow-effect">
+          <div class="iconbox rounded-4 ">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+            <h4 class="mt-4 mb-3">Bussiness Analyst</h4>
+            <p>I like to Data visualized from scratch, and enjoy bringing ideas to life in the bussiness field.</p>
+            <h6 class="text-brand ">Platform I used in Visualization</h6>
+            <p >MS-EXCEL ,TABLEAU,POWER BI</p>
+            <a href="#" class="link-custom">Read More</a>
+          
+        </div>
+      </div>
+
+      <div class="col-md-4"data-aos="fade-up"data-aos-delay="300">
+        <div class="service p-4 bg-base rounded-4 shadow-effect">
+          <div class="iconbox rounded-4 ">
+            <i class="las la-laptop-code"></i>
+          </div>
+            <h4 class="mt-4 mb-3">Web Development</h4>
+            <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            <h6 class="text-brand ">Languages I speak:</h6>
+            <p >HTML, CSS, BOOTSTARP, JAVASCRIPT, REACT JS, Git</p>
+            <a href="#" class="link-custom ">Read More</a>
+          
+        </div>
+      </div>
+
+      <div class="col-md-4"data-aos="fade-up"data-aos-delay="600">
+        <div class="service p-4 bg-base rounded-4 shadow-effect">
+          <div class="iconbox rounded-4 ">
+            <i class="fa-solid fa-database"></i>
+          </div>
+            <h4 class="mt-4 mb-3">Oracle Developer</h4>
+            <p>I like to create a queries from scratch, and enjoy brining ideas in the <br> Database.</p>
+            <h6 class="text-brand ">Things I Used:</h6>
+            <p>ORACLE,PL/SQL, SQL</p>
+            <a href="#" class="link-custom ">Read More</a>
+          
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</section>
+
+<!-- services section end  -->
+
+<!-- work section start  -->
+
+<!-- work section end  -->
+
 </div>
 
 

@@ -34,6 +34,39 @@ a:hover{
 img{
     width: 65%;
 }
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+   border: 2px solid var(--color-base);
+}
+.text-brand{
+    color: var(--color-brand);
+}
+.bg-base{
+    background-color: var(--color-base);
+}
+.shadow-effect{
+    transition: all 0.5s;
+}
+.shadow-effect:hover{
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+
+}
+.iconbox{
+    width:60px;
+    height:60px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
 /* #navbar design  */
 .navbar{
     background-color:var(--color-base);
@@ -51,6 +84,9 @@ img{
     margin-left: 30px;
     border-radius: 48%;
 }
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
 
 @media (min-width:992px){
     .navbar{
@@ -64,4 +100,41 @@ img{
    #content-wrapper{
     padding-left: var(--sidebar-width);
    }
+}
+
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+}
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+.btn-brand:hover,
+.btn-brand:focus{
+    background-color:var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+.link-custom{
+    position: relative;
+    font-weight: 700;
+}
+.link-custom::after{
+    content: "";
+    width: 0%;
+    height:2px;
+    background-color:var(--color-brand2);
+    position: absolute;
+    left:0;
+    top:110%;
+    transition: all 0.4s;
+
+
+}
+.link-custom:hover::after{
+    width:100%;
+
 }
