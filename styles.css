@@ -32,7 +32,7 @@ a:hover{
 }
 
 img{
-    width: 65%;
+    width: 100%;
 }
 .full-height{
     min-height: 100vh;
@@ -81,11 +81,27 @@ img{
 }
 .navbar img{
     border:8px solid var(--color-brand);
-    margin-left: 30px;
+    /* margin-left: 30px; */
     border-radius: 48%;
 }
 .navbar .nav-link.active {
     color: var(--color-brand);
+}
+/* #contact section  */
+#contact .form-control{
+    background-color: var(--color-base);
+    color: var(--color-body);
+    border-color: var(--color-base);
+}
+#contact .form-control:hover{
+    border-color: var(--color-body);
+    box-shadow: none;
+}
+#contact .form-control::placeholder{
+    color: var(--color-body);
+}
+#contact.input.form-control{
+    height:46px;
 }
 
 @media (min-width:992px){
@@ -137,4 +153,20 @@ img{
 .link-custom:hover::after{
     width:100%;
 
+}
+
+/* social list  */
+.social-link{
+
+}
+.social-link a{
+    width: 40px;
+    height:40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 40px;
+    font-size: 24px;
+   
 }
